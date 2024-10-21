@@ -1,0 +1,13 @@
+dist
+data
+.env
+.envrc
+.prodenv
+.devenv/
+.direnv/
+.envrc
+www/app.css
+docker-compose.yml
+.pre-commit-config.yaml
+tmp
+uploads
