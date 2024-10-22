@@ -33,6 +33,8 @@ func main() {
 		http.ServeFile(w, r, "./www/app.css")
 	})
 
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+
 	log.Println(http.ListenAndServe(":8069", nil))
 }
 
